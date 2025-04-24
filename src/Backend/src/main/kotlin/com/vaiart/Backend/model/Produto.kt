@@ -31,7 +31,7 @@ data class Produto (
     @Column(nullable = false)
     var disponivel: Boolean = true,
 
-
-
-
+    @OneToMany(mappedBy = "produto")
+    val itens: MutableSet<ItemPedido> = mutableSetOf()
+    
 )
