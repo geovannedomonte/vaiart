@@ -27,7 +27,9 @@ data class Pedido(
     @Column(name = "id_transacao")
     var idTransacao: String? = null,
 
-
+    @ManyToOne
+    @JoinColumn(name = "status_id", nullable = false)
+    var status: StatusPedido = StatusPedido.AGUARDANDO_PAGAMENTO,
 
     @OneToMany(mappedBy = "pedido", cascade = [CascadeType.ALL], orphanRemoval = true )
     val pedidos: MutableSet<ItemPedido> = mutableSetOf()
