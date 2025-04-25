@@ -26,4 +26,7 @@ data class Pedido(
     var idTransacao: String? = null,
 
 
+
+    @OneToMany(mappedBy = "pedido", cascade = [CascadeType.ALL], orphanRemoval = true )
+    val pedidos: MutableSet<ItemPedido> = mutableSetOf()
 )
