@@ -33,5 +33,5 @@ data class Produto (
 
     @OneToMany(mappedBy = "produto")
     val itens: MutableSet<ItemPedido> = mutableSetOf()
-    
+
 )
