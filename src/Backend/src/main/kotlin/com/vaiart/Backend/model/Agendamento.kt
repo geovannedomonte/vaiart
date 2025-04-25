@@ -3,6 +3,8 @@ package com.vaiart.Backend.model
 import  jakarta.persistence.*
 import java.time.LocalDateTime
 
+@Entity
+@Table(name = "agendamento")
 data class Agendamento(
 
     @Id
