@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
 
 @Repository
-interface ProdutoRepository: JpaRepository<Produto, Long> {
+interface ProdutoRepository : JpaRepository<Produto, Long> {
     fun findByNomeContainingIgnoreCase(nome: String, pageable: Pageable): Page<Produto>
     fun findByDisponivelTrue(pageable: Pageable): Page<Produto>
 }
