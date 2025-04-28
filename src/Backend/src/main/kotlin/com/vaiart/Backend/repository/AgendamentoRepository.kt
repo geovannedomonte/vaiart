@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository
 import java.time.LocalDateTime
 
 @Repository
-interface AgendamentoRepository: JpaRepository<Agendamento, Long{
+interface AgendamentoRepository: JpaRepository<Agendamento, Long>{
     fun findByDataHoraBetween(inicio: LocalDateTime, fim: LocalDateTime):List<Agendamento>
     fun findByNomeClienteContainingIgnoreCase(nomeCliente: String): List<Agendamento>
 }
