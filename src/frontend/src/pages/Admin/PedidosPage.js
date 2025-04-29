@@ -432,7 +432,7 @@ const PedidosPage = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {selectedOrder.itens.map(item => (
+                  {selectedOrder.pedidos.map(item => (
                     <tr key={item.id}>
                       <Td>{item.produto.nome}</Td>
                       <Td style={{ textAlign: 'center' }}>{item.quantidade}</Td>
