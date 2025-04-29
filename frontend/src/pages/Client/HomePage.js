@@ -1,3 +1,4 @@
+
 // src/pages/Client/HomePage.js
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -60,6 +61,7 @@ const ButtonContainer = styled.div`
   justify-content: center;
 `;
 
+console.log("HomePage carregada");
 const HomePage = () => {
   const [produtos, setProdutos] = useState([]);
   const [loading, setLoading] = useState(true);

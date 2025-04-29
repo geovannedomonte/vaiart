@@ -4,10 +4,10 @@ import { BrowserRouter } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import styled from 'styled-components';
-import { AuthProvider } from './contexts/AuthContext';
-import { CartProvider } from './contexts/CartContext';
-import AppRoutes from './routes';
-import Navbar from './components/Common/Navbar';
+import { AuthProvider } from '../contexts/AuthContext';
+import { CartProvider } from '../contexts/CartContext';
+import AppRoutes from '../routes';
+import Navbar from '../components/Common/Navbar';
 
 const AppContainer = styled.div`
   min-height: 100vh;

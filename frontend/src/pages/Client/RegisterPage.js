@@ -5,8 +5,8 @@ import styled from 'styled-components';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { toast } from 'react-toastify';
-import { AuthContext } from '../contexts/AuthContext';
-import Button from '../components/Common/Button';
+import { AuthContext } from '../../contexts/AuthContext';
+import Button from '../../components/Common/Button';
 
 const RegisterContainer = styled.div`
   max-width: 500px;
